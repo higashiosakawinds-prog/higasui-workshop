@@ -74,11 +74,11 @@
   <div class="hero__body">
     <div class="hero__head">
       <h1 class="hero__title">
-        <span class="hero__title-0">東大阪吹奏楽団の</span>
-        <span class="hero__title-1">公開</span>
-        <span class="hero__title-2">ワークショップ</span>
+        <span class="hero__title-0" data-split>東大阪吹奏楽団の</span>
+        <span class="hero__title-1" data-split>公開</span>
+        <span class="hero__title-2" data-split>ワークショップ</span>
       </h1>
-      <p class="hero__catch">音楽をつくる過程を、<br class="sp">ともに学ぶ一日</p>
+      <p class="hero__catch" data-split>音楽をつくる過程を、<br class="sp">ともに学ぶ一日</p>
     </div>
 
     <div class="hero__foot">
@@ -104,62 +104,72 @@
   <div class="band band--a"><div class="ticker"><span>OPEN WORKSHOP ◆ 2027.1.16 SAT ◆ 東大阪市文化創造館 D1 ◆ 演奏参加 2,000円 ◆ 聴講 無料 ◆&nbsp;</span></div></div>
 </div>
 
-<!-- ========== 当日の取り組み ========== -->
+<!-- ========== 当日の取り組み（縦書き見出しが左に固定される） ========== -->
 <section class="sec program" id="program">
-  <div class="wrap">
-    <p class="label reveal">PROGRAM</p>
-    <h2 class="h2 reveal">当日の取り組み</h2>
-    <p class="lead reveal">リハーサルを“見せる”のではなく、音楽ができあがっていく過程そのものをみんなで体験する3時間です。</p>
-
-    <ol class="rows">
-      <li class="row reveal">
-        <span class="row__num">01</span>
-        <h3>いつもの曲を、<br>もっと深く。</h3>
-        <p>ひがすいが現在練習中の楽曲のリハーサル・合奏指導。</p>
-      </li>
-      <li class="row reveal">
-        <span class="row__num">02</span>
-        <h3>初めての曲から、<br>音楽をつくる。</h3>
-        <p>初見合奏・実践的なリハーサル。</p>
-      </li>
-      <li class="row reveal">
-        <span class="row__num">03</span>
-        <h3>学びを、<br>次の演奏へ。</h3>
-        <p>質疑応答・振り返り。</p>
-      </li>
-    </ol>
+  <div class="wrap program__grid">
+    <div class="program__side">
+      <p class="label">PROGRAM</p>
+      <h2 class="program__title" data-split>当日の取り組み</h2>
+    </div>
+    <div class="program__main">
+      <p class="lead reveal">リハーサルを“見せる”のではなく、音楽ができあがっていく過程そのものをみんなで体験する3時間です。</p>
+      <ol class="rows">
+        <li class="row reveal">
+          <span class="row__num">01</span>
+          <h3>いつもの曲を、<br>もっと深く。</h3>
+          <p>ひがすいが現在練習中の楽曲のリハーサル・合奏指導。</p>
+        </li>
+        <li class="row reveal">
+          <span class="row__num">02</span>
+          <h3>初めての曲から、<br>音楽をつくる。</h3>
+          <p>初見合奏・実践的なリハーサル。</p>
+        </li>
+        <li class="row reveal">
+          <span class="row__num">03</span>
+          <h3>学びを、<br>次の演奏へ。</h3>
+          <p>質疑応答・振り返り。</p>
+        </li>
+      </ol>
+    </div>
   </div>
 </section>
 
-<!-- ========== 大きなひとこと（写真） ========== -->
+<!-- ========== 大きなひとこと（2行が左右逆向きに流れる） ========== -->
 <section class="statement" aria-label="コンセプト">
   <div class="statement__imgwrap" aria-hidden="true">
     <img class="statement__img" data-speed=".18" src="assets/band.webp" alt="" loading="lazy">
   </div>
-  <p class="statement__text reveal">音楽を<em>つくる過程</em>を、<br>ともに学ぶ一日。</p>
+  <p class="statement__text">
+    <span class="statement__line" data-speed="-.1" data-axis="x" data-split>音楽を<em>つくる過程</em>を、</span>
+    <span class="statement__line" data-speed=".1" data-axis="x" data-split>ともに学ぶ一日。</span>
+  </p>
 </section>
 
-<!-- ========== 講師（生成り色の斜めブロック） ========== -->
+<!-- ========== 講師（生成り色の斜めブロック・名前は縦書き） ========== -->
 <section class="sec teacher" id="teacher">
   <div class="teacher__bgword" data-speed=".15" data-axis="x" aria-hidden="true">CONDUCTOR CONDUCTOR</div>
   <div class="wrap teacher__grid">
-    <img class="teacher__photo reveal" src="assets/maeda-baton.webp" alt="タクトを振る前田卓哉先生" width="1122" height="1402" loading="lazy">
+    <div class="teacher__visual">
+      <img class="teacher__photo reveal" src="assets/maeda-baton.webp" alt="タクトを振る前田卓哉先生" width="1122" height="1402" loading="lazy">
+      <h2 class="teacher__namev" data-split>前田卓哉<small>先生</small></h2>
+    </div>
     <div class="teacher__text">
       <p class="label reveal">TEACHER</p>
-      <p class="teacher__en reveal">Tak Maeda</p>
-      <h2 class="teacher__name reveal">前田 卓哉<small>先生</small></h2>
+      <p class="teacher__en" data-split>Tak Maeda</p>
       <p class="reveal">カナダ西海岸を拠点に活動する指揮者・音楽指導者。現在、複数の市民吹奏楽団で音楽監督・指導者を務める。</p>
       <p class="reveal">各地の音楽フェスティバルでの審査・講師、学校での訪問指導やワークショップなど、次世代の音楽教育にも積極的に取り組んでいる。</p>
     </div>
   </div>
 </section>
 
-<!-- ========== 参加方法（チケット） ========== -->
+<!-- ========== 参加方法（巨大な「2」・チケット） ========== -->
 <section class="sec entry" id="entry">
   <div class="wrap">
-    <p class="label reveal">ENTRY</p>
-    <h2 class="h2 reveal">参加のしかたは2つ</h2>
-    <p class="lead reveal">東大阪吹奏楽団員以外の方も、楽器を持ってご参加いただけます。</p>
+    <div class="entry__head">
+      <p class="label reveal">ENTRY</p>
+      <h2 class="entry__title" data-split>参加のしかたは<b class="entry__two">2</b>つ</h2>
+      <p class="lead reveal">東大阪吹奏楽団員以外の方も、楽器を持ってご参加いただけます。</p>
+    </div>
 
     <div class="tickets">
       <article class="plan plan--perform reveal">
@@ -193,29 +203,23 @@
   </div>
 </section>
 
-<!-- ========== 日時・会場 ========== -->
+<!-- ========== 日時・会場（巨大な文字を左右交互に） ========== -->
 <section class="sec info" id="info">
   <div class="wrap">
+    <h2 class="sr">日時・会場</h2>
     <p class="label reveal">INFORMATION</p>
-    <h2 class="h2 reveal">日時・会場</h2>
-
-    <div class="info__wrap reveal">
-      <div class="info__date">
-        <small>2027</small>
-        <b>1.16</b>
-        <i>SAT</i>
-      </div>
-      <dl class="info__list">
-        <div><dt>時間</dt><dd>13:30–16:30（開場 13:00）</dd></div>
-        <div><dt>会場</dt><dd>東大阪市文化創造館 D1<br><a class="link" href="https://www.google.com/maps/search/?api=1&query=東大阪市文化創造館" target="_blank" rel="noopener">地図を開く ↗</a></dd></div>
-        <div><dt>参加費</dt><dd>演奏参加 2,000円　／　聴講 無料</dd></div>
-        <div><dt>主催</dt><dd>東大阪吹奏楽団（ひがすい）</dd></div>
-      </dl>
-    </div>
+    <ul class="bigrows">
+      <li class="bigrow reveal"><span class="bigrow__k">日　時</span><span class="bigrow__v"><span class="en">2027.1.16</span><small>SAT</small></span></li>
+      <li class="bigrow reveal"><span class="bigrow__k">時　間</span><span class="bigrow__v"><span class="en">13:30–16:30</span><small>開場 13:00</small></span></li>
+      <li class="bigrow reveal"><span class="bigrow__k">会　場</span><span class="bigrow__v">東大阪市文化創造館 <span class="en">D1</span><small><a class="link" href="https://www.google.com/maps/search/?api=1&query=東大阪市文化創造館" target="_blank" rel="noopener">地図を開く ↗</a></small></span></li>
+      <li class="bigrow reveal"><span class="bigrow__k">参加費</span><span class="bigrow__v">演奏参加 <span class="en">2,000</span>円<small>聴講は無料</small></span></li>
+      <li class="bigrow reveal"><span class="bigrow__k">主　催</span><span class="bigrow__v">東大阪吹奏楽団<small>ひがすい</small></span></li>
+    </ul>
   </div>
 </section>
 
 <footer class="footer">
+  <div class="footer__marquee" aria-hidden="true"><div class="ticker ticker--rev"><span>HIGASHI OSAKA WIND ORCHESTRA ◆&nbsp;</span></div></div>
   <div class="wrap footer__in">
     <p class="footer__name">東大阪吹奏楽団 <small>Higashi Osaka Wind Orchestra</small></p>
     <p class="footer__links">

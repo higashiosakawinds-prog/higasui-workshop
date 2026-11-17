@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>公開ワークショップ 2027.1.16｜東大阪吹奏楽団 × 前田卓哉先生</title>
-<meta name="description" content="音楽をつくる過程を、ともに学ぶ一日。2027年1月16日(土) 13:30〜16:30、東大阪市文化創造館 D1。講師はカナダ西海岸で活動する指揮者・前田卓哉先生。演奏参加2,000円／聴講無料。">
+<title>東大阪吹奏楽団の公開ワークショップ 2027.1.16｜講師 前田卓哉先生</title>
+<meta name="description" content="東大阪吹奏楽団の公開ワークショップ。音楽をつくる過程を、ともに学ぶ一日。2027年1月16日(土) 13:30〜16:30、東大阪市文化創造館 D1。講師はカナダ西海岸で活動する指揮者・前田卓哉先生。演奏参加2,000円／聴講無料。">
 
 <!-- SNSで共有したときの表示。公開URLが決まったら og:image を「https://〜/assets/flyer.png」の形に書き換える -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="公開ワークショップ 2027.1.16｜東大阪吹奏楽団">
+<meta property="og:title" content="東大阪吹奏楽団の公開ワークショップ 2027.1.16">
 <meta property="og:description" content="音楽をつくる過程を、ともに学ぶ一日。講師：前田卓哉先生。演奏参加2,000円／聴講無料。">
 <meta property="og:image" content="assets/flyer.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -35,36 +35,74 @@
 
 <body>
 
+<!-- ========== 上部に固定されるナビ ========== -->
+<nav class="gnav" id="gnav">
+  <a class="gnav__logo" href="#top">東大阪吹奏楽団<small>Open Workshop 2027</small></a>
+  <div class="gnav__links">
+    <a href="#program">当日の内容</a>
+    <a href="#teacher">講師</a>
+    <a href="#entry">参加方法</a>
+    <a href="#info">日時・会場</a>
+  </div>
+  <a class="btn btn--gold" href="#entry">お申し込み</a>
+</nav>
+
 <!-- ========== ヒーロー ========== -->
 <header class="hero" id="top">
-  <div class="hero__bg" aria-hidden="true"></div>
-  <img class="hero__swirl" src="assets/sparkle-swirl.webp" alt="" aria-hidden="true">
-  <img class="hero__dust"  src="assets/sparkle-dust.webp"  alt="" aria-hidden="true">
+  <div class="hero__bg" data-speed=".25" aria-hidden="true"></div>
+  <div class="hero__swirl" data-speed="-.12" aria-hidden="true"><img src="assets/sparkle-swirl.webp" alt=""></div>
+  <img class="hero__dust" src="assets/sparkle-dust.webp" alt="" aria-hidden="true">
 
-  <img class="hero__maeda" src="assets/maeda-smile.webp" alt="講師の前田卓哉先生" width="1169" height="1345">
+  <div class="hero__maeda" data-speed=".08">
+    <img src="assets/maeda-smile.webp" alt="講師の前田卓哉先生" width="1169" height="1345">
+  </div>
+
+  <!-- 回る丸バッジ（押すと申込へ） -->
+  <a class="badge" href="#entry" aria-label="お申し込みへ">
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+      <defs><path id="circ" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+      <g class="badge__ring">
+        <circle cx="100" cy="100" r="99" fill="#d9ae5f"/>
+        <text><textPath href="#circ" textLength="470" lengthAdjust="spacing">演奏参加 2,000円 ◆ 聴講 無料 ◆ 演奏参加 2,000円 ◆ 聴講 無料 ◆</textPath></text>
+      </g>
+    </svg>
+    <span class="badge__c">申込</span>
+  </a>
+
+  <p class="hero__vertical" aria-hidden="true">OPEN WORKSHOP ・ 2027.1.16 SAT</p>
 
   <div class="hero__body">
-    <p class="hero__presents">東大阪吹奏楽団 <span>presents</span></p>
-    <p class="hero__catch">音楽をつくる過程を、<br class="sp">ともに学ぶ一日</p>
-    <h1 class="hero__title">
-      <span class="hero__title-1">公開</span>
-      <span class="hero__title-2">ワークショップ</span>
-    </h1>
-
-    <div class="hero__date">
-      <p class="hero__year">2027</p>
-      <p class="hero__md">1.16<small>SAT</small></p>
+    <div class="hero__head">
+      <h1 class="hero__title">
+        <span class="hero__title-0">東大阪吹奏楽団の</span>
+        <span class="hero__title-1">公開</span>
+        <span class="hero__title-2">ワークショップ</span>
+      </h1>
+      <p class="hero__catch">音楽をつくる過程を、<br class="sp">ともに学ぶ一日</p>
     </div>
-    <p class="hero__time">13:30–16:30 <span>開場 13:00</span></p>
-    <p class="hero__venue">東大阪市文化創造館 <b>D1</b></p>
 
-    <div class="hero__cta">
-      <a class="btn btn--gold" href="#entry" data-link="perform">演奏で参加する<small>2,000円</small></a>
-      <a class="btn btn--line" href="#entry" data-link="listen">聴いて学ぶ<small>無料</small></a>
+    <div class="hero__foot">
+      <div class="hero__date">
+        <p class="hero__year">2027</p>
+        <p class="hero__md">1.16<small>SAT</small></p>
+      </div>
+      <p class="hero__time">13:30–16:30 <span>開場 13:00</span></p>
+      <p class="hero__venue">東大阪市文化創造館 <b>D1</b></p>
+
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#entry" data-link="perform">演奏で参加<small>2,000円</small></a>
+        <a class="btn btn--line" href="#entry" data-link="listen">聴いて学ぶ<small>無料</small></a>
+      </div>
+      <p class="hero__count" id="countdown" aria-live="polite"></p>
     </div>
-    <p class="hero__count" id="countdown" aria-live="polite"></p>
   </div>
 </header>
+
+<!-- ========== 流れる帯 ========== -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="band band--b"><div class="ticker ticker--rev"><span>PLAY ◆ LISTEN ◆ LEARN ◆ 音楽をつくる過程を、ともに学ぶ ◆&nbsp;</span></div></div>
+  <div class="band band--a"><div class="ticker"><span>OPEN WORKSHOP ◆ 2027.1.16 SAT ◆ 東大阪市文化創造館 D1 ◆ 演奏参加 2,000円 ◆ 聴講 無料 ◆&nbsp;</span></div></div>
+</div>
 
 <!-- ========== 当日の取り組み ========== -->
 <section class="sec program" id="program">
@@ -73,19 +111,19 @@
     <h2 class="h2 reveal">当日の取り組み</h2>
     <p class="lead reveal">リハーサルを“見せる”のではなく、音楽ができあがっていく過程そのものをみんなで体験する3時間です。</p>
 
-    <ol class="steps">
-      <li class="step reveal">
-        <span class="step__num">01</span>
+    <ol class="rows">
+      <li class="row reveal">
+        <span class="row__num">01</span>
         <h3>いつもの曲を、<br>もっと深く。</h3>
         <p>ひがすいが現在練習中の楽曲のリハーサル・合奏指導。</p>
       </li>
-      <li class="step reveal">
-        <span class="step__num">02</span>
+      <li class="row reveal">
+        <span class="row__num">02</span>
         <h3>初めての曲から、<br>音楽をつくる。</h3>
         <p>初見合奏・実践的なリハーサル。</p>
       </li>
-      <li class="step reveal">
-        <span class="step__num">03</span>
+      <li class="row reveal">
+        <span class="row__num">03</span>
         <h3>学びを、<br>次の演奏へ。</h3>
         <p>質疑応答・振り返り。</p>
       </li>
@@ -93,9 +131,17 @@
   </div>
 </section>
 
-<!-- ========== 講師 ========== -->
+<!-- ========== 大きなひとこと（写真） ========== -->
+<section class="statement" aria-label="コンセプト">
+  <div class="statement__imgwrap" aria-hidden="true">
+    <img class="statement__img" data-speed=".18" src="assets/band.webp" alt="" loading="lazy">
+  </div>
+  <p class="statement__text reveal">音楽を<em>つくる過程</em>を、<br>ともに学ぶ一日。</p>
+</section>
+
+<!-- ========== 講師（生成り色の斜めブロック） ========== -->
 <section class="sec teacher" id="teacher">
-  <div class="teacher__bg" aria-hidden="true"></div>
+  <div class="teacher__bgword" data-speed=".15" data-axis="x" aria-hidden="true">CONDUCTOR CONDUCTOR</div>
   <div class="wrap teacher__grid">
     <img class="teacher__photo reveal" src="assets/maeda-baton.webp" alt="タクトを振る前田卓哉先生" width="1122" height="1402" loading="lazy">
     <div class="teacher__text">
@@ -108,28 +154,38 @@
   </div>
 </section>
 
-<!-- ========== 申込 ========== -->
+<!-- ========== 参加方法（チケット） ========== -->
 <section class="sec entry" id="entry">
   <div class="wrap">
     <p class="label reveal">ENTRY</p>
     <h2 class="h2 reveal">参加のしかたは2つ</h2>
     <p class="lead reveal">東大阪吹奏楽団員以外の方も、楽器を持ってご参加いただけます。</p>
 
-    <div class="plans">
+    <div class="tickets">
       <article class="plan plan--perform reveal">
-        <p class="plan__tag">演奏参加</p>
-        <p class="plan__price">2,000<small>円</small></p>
-        <p class="plan__text">楽器を持って、合奏に加わる。先生の指導を、音の中で直接体験できます。</p>
-        <a class="btn btn--dark" href="#entry" data-link="perform">決済して申し込む</a>
-        <p class="plan__note">お支払い（クレジットカード等）が完了すると、お申し込み完了です。</p>
+        <div class="plan__main">
+          <p class="plan__tag">演奏参加</p>
+          <p class="plan__price">2,000<small>円</small></p>
+        </div>
+        <div class="plan__body">
+          <p class="plan__text">楽器を持って、合奏に加わる。先生の指導を、音の中で直接体験できます。</p>
+          <a class="btn btn--dark" href="#entry" data-link="perform">決済して申し込む</a>
+          <p class="plan__note">お支払い（クレジットカード等）が完了すると、お申し込み完了です。</p>
+        </div>
+        <div class="plan__stub"><span>ADMIT ONE ・ PLAYER</span></div>
       </article>
 
       <article class="plan plan--listen reveal">
-        <p class="plan__tag">聴講</p>
-        <p class="plan__price">無料</p>
-        <p class="plan__text">客席から、音楽がつくられていく過程を見て、聴いて、学ぶ。</p>
-        <a class="btn btn--gold" href="#entry" data-link="listen">フォームで申し込む</a>
-        <p class="plan__note">フォームに入力して送信すると、お申し込み完了です。</p>
+        <div class="plan__main">
+          <p class="plan__tag">聴講</p>
+          <p class="plan__price">無料</p>
+        </div>
+        <div class="plan__body">
+          <p class="plan__text">客席から、音楽がつくられていく過程を見て、聴いて、学ぶ。</p>
+          <a class="btn btn--gold" href="#entry" data-link="listen">フォームで申し込む</a>
+          <p class="plan__note">フォームに入力して送信すると、お申し込み完了です。</p>
+        </div>
+        <div class="plan__stub"><span>ADMIT ONE ・ LISTENER</span></div>
       </article>
     </div>
 
@@ -137,17 +193,25 @@
   </div>
 </section>
 
-<!-- ========== 会場・日時 ========== -->
+<!-- ========== 日時・会場 ========== -->
 <section class="sec info" id="info">
   <div class="wrap">
     <p class="label reveal">INFORMATION</p>
     <h2 class="h2 reveal">日時・会場</h2>
-    <dl class="info__list reveal">
-      <div><dt>日時</dt><dd>2027年1月16日（土）<br>13:30–16:30（開場 13:00）</dd></div>
-      <div><dt>会場</dt><dd>東大阪市文化創造館 D1<br><a class="link" href="https://www.google.com/maps/search/?api=1&query=東大阪市文化創造館" target="_blank" rel="noopener">地図を開く ↗</a></dd></div>
-      <div><dt>参加費</dt><dd>演奏参加 2,000円　／　聴講 無料</dd></div>
-      <div><dt>主催</dt><dd>東大阪吹奏楽団（ひがすい）</dd></div>
-    </dl>
+
+    <div class="info__wrap reveal">
+      <div class="info__date">
+        <small>2027</small>
+        <b>1.16</b>
+        <i>SAT</i>
+      </div>
+      <dl class="info__list">
+        <div><dt>時間</dt><dd>13:30–16:30（開場 13:00）</dd></div>
+        <div><dt>会場</dt><dd>東大阪市文化創造館 D1<br><a class="link" href="https://www.google.com/maps/search/?api=1&query=東大阪市文化創造館" target="_blank" rel="noopener">地図を開く ↗</a></dd></div>
+        <div><dt>参加費</dt><dd>演奏参加 2,000円　／　聴講 無料</dd></div>
+        <div><dt>主催</dt><dd>東大阪吹奏楽団（ひがすい）</dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
@@ -163,61 +227,6 @@
   </div>
 </footer>
 
-<!-- スマホ用：画面下に固定される申込バー -->
-<div class="dock" id="dock">
-  <a class="btn btn--gold" href="#entry" data-link="perform">演奏参加 2,000円</a>
-  <a class="btn btn--line" href="#entry" data-link="listen">聴講 無料</a>
-</div>
-
-<script>
-/* 1) 申込ボタンにリンクを反映（上の LINKS を使う） */
-document.querySelectorAll("[data-link]").forEach(function (a) {
-  var url = LINKS[a.dataset.link];
-  if (url) {
-    a.href = url; a.target = "_blank"; a.rel = "noopener";
-  } else {
-    a.classList.add("is-pending");
-    a.setAttribute("aria-disabled", "true");
-    a.removeAttribute("href");
-    a.insertAdjacentText("beforeend", " ※準備中");
-  }
-});
-
-/* 2) 開催までのカウントダウン（日本時間） */
-(function () {
-  var el = document.getElementById("countdown");
-  var start = new Date("2027-01-16T13:30:00+09:00");
-  var end   = new Date("2027-01-16T16:30:00+09:00");
-  var now = new Date();
-  if (now > end)       el.textContent = "開催は終了しました。ご参加ありがとうございました。";
-  else if (now > start) el.textContent = "本日開催中です。";
-  else el.textContent = "開催まで あと " + Math.ceil((start - now) / 86400000) + " 日";
-})();
-
-/* 3) スクロールでふわっと表示 */
-(function () {
-  var items = document.querySelectorAll(".reveal");
-  if (!("IntersectionObserver" in window)) { items.forEach(function (e) { e.classList.add("is-in"); }); return; }
-  var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
-  items.forEach(function (e) { io.observe(e); });
-})();
-
-/* 4) スマホの固定バー：ヒーローを過ぎたら出す／申込セクションでは隠す */
-(function () {
-  var dock = document.getElementById("dock");
-  var hero = document.getElementById("top");
-  var entry = document.getElementById("entry");
-  function update() {
-    var y = window.scrollY, h = hero.offsetHeight * 0.7;
-    var r = entry.getBoundingClientRect();
-    var inEntry = r.top < window.innerHeight * 0.6 && r.bottom > 0;
-    dock.classList.toggle("is-on", y > h && !inEntry);
-  }
-  window.addEventListener("scroll", update, { passive: true });
-  update();
-})();
-</script>
+<script src="main.js"></script>
 </body>
 </html>

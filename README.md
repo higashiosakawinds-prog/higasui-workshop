@@ -1,8 +1,9 @@
-# 公開ワークショップ LP
+# 東大阪吹奏楽団 公開ワークショップ LP
 
 ## ファイル構成
-- `index.html` … ページ本体（文章はここ）
+- `index.html` … ページ本体（文章・申込リンクはここ）
 - `style.css` … 見た目（色・フォントは一番上の `:root` だけ）
+- `main.js` … 動き（触らなくてOK）
 - `tokushoho.html` … 特定商取引法に基づく表記（【要記入】を埋める）
 - `assets/` … 画像
 
@@ -20,6 +21,9 @@
 3. 「カスタムフィールド」で 氏名・演奏楽器 を入力欄に追加
 4. 作成された URL を `LINKS.perform` に貼る
 
-## 公開（Cloudflare Pages）
-GitHub に新しいリポジトリを作ってこのフォルダを push → Cloudflare Pages で連携。
-ビルド設定は不要（Build command 空欄・出力ディレクトリ `/`）。
+## 公開（GitHub Pages）
+リポジトリの Settings → Pages → Branch を `main` / `/ (root)` にして Save。
+公開URL：`https://ユーザー名.github.io/リポジトリ名/`
+
+## 直したいとき
+GitHub でファイルを開き、鉛筆アイコン → 編集 → Commit changes。1〜2分で反映されます。
